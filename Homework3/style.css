@@ -1,0 +1,286 @@
+/*
+#at-plus-container {
+  text-align: center;
+  background-color: rgb(156, 160, 205);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: auto;
+  display: inline-block;
+}
+*/
+
+
+#bottom-positioner {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 760px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+span {
+  font-weight: bolder;
+}
+
+#info-bar {
+  opacity: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 340px;
+  -webkit-transition: all 1s ease-out 300ms;
+  -moz-transition: all 1s ease-out 300ms;
+  transition: all 1s ease-out 300ms;
+  overflow: hidden;
+  -webkit-transform: translate(-80px, 0px) scale(0);
+     -moz-transform: translate(-80px, 0px) scale(0);
+          transform: translate(-80px, 0px) scale(0);
+}
+
+#button:hover #info-bar {
+  position: absolute;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  background-color: #7E7E7E;
+  opacity: 1;
+  -webkit-transition: all 1s ease-out 100ms;
+  -moz-transition: all 1s ease-out 100ms;
+  transition: all 1s ease-out 100ms;
+  display: inline-block;
+  -webkit-transform: translate(-77px, -150px) scale(1);
+     -moz-transform: translate(-77px, -150px) scale(1);
+          transform: translate(-77px, -150px) scale(1);
+}
+
+.info ul {
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  padding: auto;
+}
+
+.info {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+/*.user span {
+  font-size: 0px;
+  color: white;
+}*/
+
+.user span {
+  font-size: 30px;
+  margin-left: 10px;
+  color: white;
+}
+
+/*.comment span {
+  font-size: 0px;
+  color: white;
+}*/
+
+.comment span {
+  font-size: 40px;
+  margin-left: 10px;
+  color: white;
+}
+
+.posted {
+  position: absolute;
+  display: inline-block;
+  color: #3cc101;
+  font-size: 0px;
+  left: 10px;
+}
+
+
+
+.like {
+  display: inline-block;
+  position: absolute;
+  color: #3cc101;
+  font-size: 0px;
+  left: 80px;
+  white-space: nowrap;
+}
+
+
+
+.mine span {
+  margin-left: 10px;
+  font-size: 27px;
+}
+
+
+
+.button {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  padding: 3px;
+  top: 400px;
+  left: 50%;
+}
+
+
+
+.mask {
+    background: url(assets/images/nomask.png) no-repeat 50% 50% #7E7E7E;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out 250ms;
+    -moz-transition: all 1s ease-out 250ms;
+    transition: all 1s ease-out 250ms;
+    background-size: 0%;
+}
+
+#button:hover .mask {
+    background: url(assets/images/nomask.png) no-repeat 50% 50% #7E7E7E;
+    background-size: 50%;
+    -webkit-transform: translate(-80px, -40px);
+       -moz-transform: translate(-80px, -40px);
+            transform: translate(-80px, -40px);
+    opacity: 1;
+}
+
+.history {
+    background: url(assets/images/history.png) no-repeat 50% 50% #7E7E7E;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out 250ms;
+    -moz-transition: all 1s ease-out 250ms;
+    transition: all 1s ease-out 250ms;
+    background-size: 0%;
+}
+
+#button:hover .history {
+    background: url(assets/images/history.png) no-repeat 50% 50% #7E7E7E;
+    background-size: 50%;
+    -webkit-transform: translate(-90px, 7px);
+       -moz-transform: translate(-90px, 7px);
+            transform: translate(-90px, 7px);
+    opacity: 1;
+}
+
+.message {
+    background: url(assets/images/message.png) no-repeat 50% 50% #7E7E7E;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out 250ms;
+    -moz-transition: all 1s ease-out 250ms;
+    transition: all 1s ease-out 250ms;
+    background-size: 0%;
+}
+
+#button:hover .message {
+    background: url(assets/images/message.png) no-repeat 50% 50% #7E7E7E;
+    background-size: 50%;
+    -webkit-transform: translate(-70px, 53px);
+       -moz-transform: translate(-70px, 53px);
+            transform: translate(-70px, 53px);
+    opacity: 1;
+}
+
+.unread {
+    display: inline-block;
+    position: absolute;
+    left:10px;
+    bottom: 8px;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    -webkit-transition: all 1s ease-out 250ms;
+    -moz-transition: all 1s ease-out 250ms;
+    transition: all 1s ease-out 250ms;
+    color: white;
+}
+
+#button:hover .unread {
+  -webkit-transform: translate(16px, -18px);
+     -moz-transform: translate(16px, -18px);
+          transform: translate(16px, -18px);
+}
+
+.setting {
+    background: url(assets/images/setting.png) no-repeat 50% 50% #7E7E7E;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out 250ms;
+    -moz-transition: all 1s ease-out 250ms;
+    transition: all 1s ease-out 250ms;
+    background-size: 0%;
+}
+
+#button:hover .setting {
+    background: url(assets/images/setting.png) no-repeat 50% 50% #7E7E7E;
+    background-size: 50%;
+    -webkit-transform: translate(-30px, 85px);
+       -moz-transform: translate(-30px, 85px);
+            transform: translate(-30px, 85px);
+    opacity: 1;
+}
+
+.sign {
+    background: url(assets/images/signin.png) no-repeat 50% 50% #7E7E7E;
+    opacity: 0;
+    -webkit-transition: all 1s ease-out 250ms;
+    -moz-transition: all 1s ease-out 250ms;
+    transition: all 1s ease-out 250ms;
+    background-size: 0%;
+}
+
+#button:hover .sign {
+    background: url(assets/images/signin.png) no-repeat 50% 50% #7E7E7E;
+    background-size: 50%;
+    -webkit-transform: translate(20px, 85px);
+       -moz-transform: translate(20px, 85px);
+            transform: translate(20px, 85px);
+    opacity: 1;
+}
+
+
+.apb {
+  text-align: center;
+}
+
+.icon {
+  -webkit-transition: all 1s ease-out 300ms;
+  -moz-transition: all 1s ease-out 300ms;
+  transition: all 1s ease-out 300ms;
+  opacity: 1;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  border-radius: 17px;
+  background: url(assets/images/atplus_white.png) no-repeat 50% 50% rgb(156, 160, 205);
+  background-size: 100%;
+}
+
+#button:hover .icon {
+  position: absolute;
+  -webkit-transition: all 1s ease-out 300ms;
+  -moz-transition: all 1s ease-out 300ms;
+  transition: all 1s ease-out 300ms;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  opacity: 1;
+  -webkit-transform: translate(-8px, -8px);
+     -moz-transform: translate(-8px, -8px);
+          transform: translate(-8px, -8px);
+  background: url(assets/images/atplus_green.png) no-repeat 50% 50% rgba(48, 63, 159, 1);
+  background-size: 80%;
+}

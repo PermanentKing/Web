@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Whac-A-Mole</title>
+    <link rel="shortcut icon" href="icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="myscript.js">
+    </script>
+  </head>
+  <body>
+    <div id="outer-box">
+      <h1>Whac-a-mole</h1>
+      <p>Test your skill.How many boxes(moles) can you check(hit) in 30 seconds?</p>
+      <div id="button-box">
+        <input type="button" id="button-ss" value="Start Game|Stop Game" />
+        <div class="output-box">
+          <span class="time-score">Time:</span>
+          <input type="text" id="time-counter" value="0" readonly="readonly" />
+        </div>
+        <input type="text" id="GO-box" value="" readonly="readonly" />
+        <div class="output-box">
+          <span class="time-score">Score:</span>
+          <input type="text" id="score-counter" value="0" readonly="readonly" />
+        </div>
+      </div>
+      <!--<div id="grade-box">
+        <span id="grade-tips"></span>
+      </div>-->
+      <div id="mole-container">
+        <div class="row-container">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+        </div>
+        <div class="row-container">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+        </div>
+        <div class="row-container">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+        </div>
+        <div class="row-container">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+        </div>
+        <div class="row-container">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+        </div>
+        <div class="row-container">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+          <input type="radio" class="mole-circle">
+        </div>
+      </div>
+      <ol class="tips-box">
+        <li>Click on the radio buttons(moles) as they are selected randomly by the computer.</li>
+        <li>1 point per hit, minus 1 point per miss.</li>
+      </ol>
+    </div>
+  </body>
+</html>

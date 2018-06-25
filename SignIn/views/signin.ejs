@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>
+    SignIn
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <style>
+    .tc {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .m15 {
+      margin: 15px;
+    }
+
+    form {
+      margin: auto;
+    }
+  </style>
+  <script>
+    $(function() {
+      $("#register0").click(function() {
+        location.href = 'regist';
+      });
+      /*$("#login0").click(function() {
+        var username = $("#username").val();
+        var password = $("#password").val();
+        var phone = $("#phone").val();
+        var email = $("#email").val();
+        var sid = $("#id").val();
+        var data = {
+          "username": username,
+          "password": password,
+          "phone": phone,
+          "id": sid,
+          "email": email
+        };
+        $.ajax({
+          url: '',
+          type: 'post',
+          data: data,
+          success: function(data, status) {
+            if (status === 'success') {
+              location.href = '';
+            }
+          },
+          error: function(data, status) {
+            if (status === 'error') {
+              location.href = '';
+            }
+          }
+        });
+      });*/
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form-horizontal col-sm-4 col-sm-offset-4" role="form" method="post" onsubmit="return true">
+      <fieldset>
+        <legend></legend>
+        <div class="panel panel-default">
+          <div class="page-header">
+            <p class="tc">请先登录</p>
+          </div>
+          <div class="panel-body m15">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="form-control" id="username" name="username" placeholder="用户名" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-lock"></span>
+                </span>
+                <input type="password" class="form-control" id="password" name="password" placeholder="密码" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn bg-primary btn-block" id="register0">注册</button>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-info col-sm-offset-10" id="login0" style="width: 100%">登录</button>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div>
+    <%=error%>
+  </div>
+</body>
+
+</html>

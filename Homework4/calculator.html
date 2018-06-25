@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="js.js"></script>
+  </head>
+  <body>
+    <div class="calBox">
+    <div class="calu">
+        <input type="text" id="text" disabled="disabled">
+    <!--<script type="text/javascript">
+      var change=function(o){
+        //限制只数字
+        o.value=o.value.replace(/\D[\+\-\*\/]/g,'').substring(0,17);//长度限制，7是长度
+    };
+  </script>
+    <input oninput="change(this)" onpropertychange="change(this)" type="text" id="text"/>-->
+        <ul class="one clearfix">
+            <li class="orange on">开机</li>
+            <li class="orange off">关机</li>
+            <li class="orange clea">清屏</li>
+            <li class="black zheng">+/-</li>
+            <li class="black brac oper">(</li>
+            <li class="num">7</li>
+            <li class="num">8</li>
+            <li class="num">9</li>
+            <li class="gray oper">/</li>
+            <li class="black brac oper">)</li>
+            <li class="num">4</li>
+            <li class="num">5</li>
+            <li class="num">6</li>
+            <li class="gray oper">*</li>
+            <li class="black sq"><-</li>
+        </ul>
+        <div class="clearfix">
+            <div class="twoBox fl">
+                <ul class="one fl two">
+                    <li class="num">1</li>
+                    <li class="num">2</li>
+                    <li class="num">3</li>
+                    <li class="gray oper">-</li>
+                    <li class="zero num">0</li>
+                    <li class="num">.</li>
+                    <li class="gray oper">+</li>
+                </ul>
+            </div>
+            <ul class="one three clearfix fl">
+                <li class="black deng fl">=</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<input type="text" id="per" style="display:none">
+<input type="text" id="text1" style="display:none">
+  </body>
+</html>

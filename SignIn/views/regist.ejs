@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/javascripts/valid.js">
+    </script>
+  </head>
+  <body>
+    <div id="bigbox">
+      <div id="upperbox">
+        <p id="up-head">Please input you imformation:</p>
+      </div>
+      <div id="content">
+        <form class="myform" method="post" onSubmit="return checkRight()">
+          <p class="innerbox"><span>用户名: </span><input type="text" name="username" id="username" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>学号: </span><input type="text" name="id" id="id" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>电话: </span><input type="text" name="phone" id="phone" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>邮箱: </span><input type="text" name="email" id="email" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>密码: </span><input type="text" name="password" id="password" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>确认密码: </span><input type="text" name="passwordagain" id="passwordagain" class="inputbox"/><span class="warning"></span></p>
+          <input type="submit" value="Submit" id="submit-button" />
+          <input type="reset" name="clean" value="Clear" id="clean" />
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

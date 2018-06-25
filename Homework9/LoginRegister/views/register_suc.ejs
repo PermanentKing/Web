@@ -1,0 +1,23 @@
+<!--<% include header.ejs %>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script type="text/javascript" src="/javascripts/valid.js">
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="index">
+    <div class="container">
+        <h1><%= title %></h1>
+        <%if(name!='' && password != ''){%>
+        用户名：<%=name%><br>学号: <%=sid%><br>电话: <%=phone%><br>邮箱: <%=email%>
+        <a href="/signout" class="btn btn-primary login" id="signout">退出</a>
+        <%}%>
+    </div>
+</div>
+<% include footer.ejs %>

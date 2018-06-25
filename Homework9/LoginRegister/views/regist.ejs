@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <script type="text/javascript" src="/javascripts/valid.js">
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="index">
+    <div class="container">
+        <h1><%= title %></h1>
+        <form id="form" action="/register_suc" method="post" onSubmit="return checkRight()">
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon1">USERNAME</span>
+                <input type="text" name="name" class="form-control" placeholder="用户名" aria-describedby="sizing-addon1" id="name">
+            </div>
+            <div class=""="warning-box">
+              <span class="warning"></span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">STUDENT ID</span>
+                <input type="text" name="sid" class="form-control" placeholder="学号" aria-describedby="sizing-addon2" id="sid">
+            </div>
+            <div class=""="warning-box">
+              <span class="warning"></span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">PHONE   </span>
+                <input type="text" name="phone" class="form-control" placeholder="电话" aria-describedby="sizing-addon2" id="phone">
+            </div>
+            <div class=""="warning-box">
+              <span class="warning"></span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">EMAIL   </span>
+                <input type="text" name="email" class="form-control" placeholder="邮箱" aria-describedby="sizing-addon2" id="email">
+            </div>
+            <div class=""="warning-box">
+              <span class="warning"></span>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="sizing-addon2">PASSWORD</span>
+                <input type="password" name="password" class="form-control" placeholder="密码" aria-describedby="sizing-addon2" id="password">
+            </div>
+            <div class=""="warning-box">
+              <span class="warning"></span>
+            </div>
+            <input type="submit" class="btn btn-primary login" value="注册" id="submit-button">
+        </form>
+    </div>
+</div>
+<% include footer.ejs %>

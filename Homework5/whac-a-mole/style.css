@@ -1,0 +1,80 @@
+body {
+  margin: 0 0 ;
+  padding: 0 0;
+}
+
+#outer-box {
+  width: 700px;
+  height: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+#button-box {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+#button-ss {
+  width: 150px;
+  height: 20px;
+  display: inline-block;
+}
+
+#GO-box {
+  width: 130px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 9px;
+}
+
+#time-counter {
+  width: 40px;
+  height: 25px;
+  display: inline-block;
+  margin-left: 1px;
+}
+
+#score-counter {
+  width: 40px;
+  height: 25px;
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.output-box {
+  width: 150px;
+  height: 35px;
+  display: inline-block;
+}
+
+.time-score {
+  font-size: 20px;
+  vertical-align: bottom;
+}
+
+li {
+  text-align: left;
+}
+
+#mole-container {
+  width: 400px;
+  height: 180px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.row-container {
+  width: 400px;
+  height: 30px;
+}
+
+.mole-circle {
+  width: 20px;
+  height: 20px;
+  margin: 5px 5px;
+}

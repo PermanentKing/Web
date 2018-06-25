@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign</title>
+<link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+  <div>
+<p><span>username: </span>
+<%=user.username%>
+</p>
+<p><span>id: </span>
+<%=user.id%>
+</p>
+<p><span>phone: </span>
+<%=user.phone%>
+</p>
+<p><span>email: </span>
+<%=user.email%>
+</p>
+<a href="链接">退出
+<input type=button onclick="window.location.href('localhost:3000/signout')">
+</a>
+</div>
+</body>
+</html>

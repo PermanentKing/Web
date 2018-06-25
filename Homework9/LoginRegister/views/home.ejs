@@ -1,0 +1,11 @@
+<% include header.ejs %>
+<div class="index">
+    <div class="container">
+        <h1><%= title %></h1>
+        <%if(name !='' && name.length>0){%>
+        用户名：<%=name%><br>学号: <%=sid%><br>电话: <%=phone%><br>邮箱: <%=email%>
+        <%}%>
+        <a href="/signout" class="btn btn-primary login" id="signout">退出</a>
+    </div>
+</div>
+<% include footer.ejs %>

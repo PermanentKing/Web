@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script type="text/javascript" src="index.js">
+    </script>
+  </head>
+  <body>
+    <div id="bigbox">
+      <div id="upperbox">
+        <p id="up-head">Please input you imformation:</p>
+      </div>
+      <div id="content">
+        <form class="myform" action="http://127.0.0.1:8000/dopost" method="post" onSubmit="return checkRight()">
+          <p class="innerbox"><span>User name: </span><input type="text" name="username" id="username" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>Id: </span><input type="text" name="id" id="id" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>Phone: </span><input type="text" name="phone" id="phone" class="inputbox"/><span class="warning"></span></p>
+          <p class="innerbox"><span>E-mail: </span><input type="text" name="email" id="email" class="inputbox"/><span class="warning"></span></p>
+          <input type="submit" value="Submit" id="submit-button" />
+          <input type="button" name="clean" value="Clear" id="clean" />
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

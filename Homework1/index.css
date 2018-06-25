@@ -1,0 +1,59 @@
+body {
+	background-image: url(lem.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	filter: alpha(opacity=50);
+}
+
+
+button {
+	font-size: 32px;
+	background-color: #4CAF50;
+	color: white;
+	display: inline-block;
+	padding: 15px 100px;
+	text-align: center;
+	margin: 2px 2px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	border-radius: 10px;
+	letter-spacing: 1px;
+}
+
+button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#butt {
+	position: relative;
+	top: 400px;
+}
+
+#he {
+	letter-spacing: 3px;
+	font-weight: 800;
+	color: #DDDDDD;
+	font-size: 70px;
+	line-height: 120px;
+	position: relative;
+	top: 100px;
+}
+
+/*
+#bodystyle {
+filter:alpha(opacity=50);  
+-moz-opacity:0.5;  
+-khtml-opacity: 0.5;  
+opacity: 0.5;
+height:100%;
+width:100%;
+position:absolute;
+}
+*/
